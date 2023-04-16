@@ -14,7 +14,7 @@
     <h1>Simple Form</h1>
     <form id="my-form" method="POST">
         <div class="form-group">
-        <label for="key">Key (8 digits):</label>
+        <label for="key">Key :</label>
         <input type="number" class="form-control" id="key" name="key" value="<?= $_POST['key'] ?? '' ?>" required>
         </div>
         <div class="form-group">
