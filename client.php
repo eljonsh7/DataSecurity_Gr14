@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <title>Search Messages</title>
+    <title>Client Side</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
@@ -23,16 +23,6 @@
                     <button type="submit" class="btn btn-primary">Search</button>
                 </form>
             </div>
-            <!-- <div class="col-md-6">
-                <h2>Search by Date</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="date">Date:</label>
-                        <input type="date" class="form-control" id="date" name="date" placeholder="Enter date" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Search</button>
-                </form>
-            </div> -->
         </div>
 
         <div class="mt-5">
@@ -67,18 +57,10 @@
 
                 var buttonType = $(this).find('button[type="submit"]').text();
                 var data = {};
-                if(buttonType === 'Search') {
-                    data = {
-                        'search_type': 'key',
-                        'key': $(this).find('input').val()
-                    };
-                } 
-                // else {
-                //     data = {
-                //         'search_type': 'date',
-                //         'date': $(this).find('input').val()
-                //     };
-                // }
+                data = {
+                    'search_type': 'key',
+                    'key': $(this).find('input').val()
+                };
                 console.log(data);
                 $.ajax({
                     type: 'POST',
