@@ -17,7 +17,7 @@
                 <h2>Search by Key</h2>
                 <form>
                     <div class="form-group">
-                        <label for="key">Key (8 digits):</label>
+                        <label for="key">Key :</label>
                         <input type="number" class="form-control" id="key" name="key" placeholder="Enter key (8 digits)" required>
                     </div>
                     <button type="submit" class="btn btn-primary">Search</button>
