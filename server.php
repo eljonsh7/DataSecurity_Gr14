@@ -14,12 +14,12 @@
     <h1>Simple Form</h1>
     <form id="my-form" method="POST">
         <div class="form-group">
-        <label for="key">Key :</label>
-        <input type="number" class="form-control" id="key" name="key" value="<?= $_POST['key'] ?? '' ?>" required>
+        <label for="key">Key: </label>
+        <input type="number" placeholder="Key: " class="form-control" id="key" name="key" value="<?= $_POST['key'] ?? '' ?>" required>
         </div>
         <div class="form-group">
         <label for="message">Message:</label>
-        <textarea class="form-control" id="message" name="message" rows="5" required><?= $_POST['message'] ?? '' ?></textarea>
+        <textarea class="form-control"  placeholder="Message:" id="message" name="message" rows="5" required><?= $_POST['message'] ?? '' ?></textarea>
         <p id="hidden"></p>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>

@@ -13,16 +13,14 @@
     <div class="container mt-5">
         <h1>Search Messages</h1>
         <div class="row mt-5">
-            <div class="col-md-6">
-                <h2>Search by Key</h2>
-                <form>
-                    <div class="form-group">
-                        <label for="key">Key :</label>
-                        <input type="number" class="form-control" id="key" name="key" placeholder="Enter key (8 digits)" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Search</button>
-                </form>
-            </div>
+            <h2>Search by Key</h2>
+            <form>
+                <div class="form-group">
+                    <label for="key">Key :</label>
+                    <input type="number" class="form-control" id="key" name="key" placeholder="Enter key" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Search</button>
+            </form>
         </div>
 
         <div class="mt-5">
